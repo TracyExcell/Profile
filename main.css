@@ -1,0 +1,97 @@
+
+
+/**************** NAVIAGATION BAR *********************/
+header {
+    position: relative;
+}
+
+.navigationBar {
+    z-index: 1;
+    position: absolute;
+    top:0;
+    font-size: 2rem;
+}
+
+.navigationBar a {
+    color: white;
+}
+
+#coverName {
+z-index: 2;
+position: absolute;
+top: 30%;
+color: #fff;
+text-align: center;
+font-size: 3rem;
+
+}
+
+.parallaxCover { 
+    /* The image used */
+    background-image: url("largeCompImage.jpg");
+
+    /* Set a specific height */
+    height: 900px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**************** CV CONTAINER *********************/
+.cvContainer {
+    background-color: #000;
+    color: #fff;
+}
+
+.headerContainer {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.tracyImage {
+    height: 100px;
+    width: 100px;
+}
+
+
+/**************** CODING IMAGE CONTAINER *********************/
+  
+
+.parallax { 
+    /* The image used */
+    background-image: url("codingImage.jpg!d");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/**************** PROJECT CONTAINER *********************/
+
+.project-imgs {
+  height: 200px;
+    width: 300px;
+}
+
+
+/**************** CONTACT CONTAINER *********************/
+#contactSection {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+}
+
+#contactSection h1, #contactSection p{
+ text-align: center;
+}
+
+.form-row {
+    padding: 20px;
+}
