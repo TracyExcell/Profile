@@ -14,6 +14,7 @@
       <header id="Home">
         <div class="parallaxCover"></div>    <!--Cover Image -->
     
+    <div>
         <ul class="nav navigationBar">    <!--Cover Navigation -->
           <li class="nav-item">
             <a class="nav-link" href="#About">About</a>
@@ -25,6 +26,16 @@
             <a class="nav-link" href="#Contact">Contact</a>
           </li>
       </ul> 
+    </div>      
+          
+    <div class="dropdown">  <!--Dropdown Menu for small screen size -->
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#About">About</a>
+        <a class="dropdown-item" href="#Projects">Projects</a>
+        <a class="dropdown-item" href="#Contact">Contact</a>
+      </div>
+    </div>
       
     <div id="coverName" class="container">  <!--Cover Name -->
      <h1>Tracy Excell</h1>
@@ -37,16 +48,19 @@
       <div class="headerContainer">
           <img src="tracy2.jpg" alt="Tracy Excell's photo" class="tracyImage" id="About">
           <img src="name.png" alt="Tracy Excell's logo">
+          <a href="#Home"><img src="arrow.png" alt="icon to click to return to the top" class="arrow"></a>
       </div>
       
       <div class="cvContainer">
         <div class="container">
           <div class="row">
             <div class="col-m-4">
+                <div id=aboutDiv>
                  <h1>About</h1>
                   <p>After experimenting with coding for a few years, I decided to try and learn to code effectively. I have completed the Front End Website Development Techdegree from Treehouse.  I am now continuing studying Website Development and I am working on freelance projects.
                 <br>When I am not coding or working, you will find me either outside with my family, or running around in circles, at the Athletics Track.
            </p>
+          </div>
          </div>
        </div>
         <div class="row">
@@ -112,13 +126,15 @@
       
       
        <!-- Project Information Start  -->
-      
-      <h1 id="Projects">Projects</h1>
+    <div id="Projects">
+      <h1 >Projects</h1>
+      <a href="#Home"><img src="arrow.png" alt="icon to click to return to the top" class="arrow"></a>
+    </div>
       
     <div class="container projectContainer"> <!--Open container-->
     <div class="row"><!--Open Row 1-->
         
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Personal Profile<br> Page</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal1">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-1.png" alt="image of profile page project"/>
@@ -155,7 +171,7 @@
         
     <!--Project 2 information-->
         
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Responsive Layout Project</h1>
             <h2  class="title"><a data-toggle="modal" href="#projectModal2">About this Project</a></h2>
             <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-2.png" alt="image of profile page project"/>
@@ -188,7 +204,7 @@
         
         <!--Project 3 information-->
         
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Registration<br> Form</h1>
             <h2 class="title about-this-project"><a data-toggle="modal" href="#projectModal3">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block registration-form" src="portfolio-3.png" alt="image of registration project"/>
@@ -225,7 +241,7 @@
   <!--Project 4 information-->
         
     <div class="row"><!--Row 2 -->
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Interactive Photo Gallery</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal4">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-4.png" alt="image of photo gallery page project"/>
@@ -260,7 +276,7 @@
         
  
     
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">CSS to <br>SASS</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal5">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-5.png" alt="image of CSS to SASS page project"/>
@@ -294,7 +310,7 @@
               <!--Project 6 information-->
         
 
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">SVG Site <br>Update</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal6">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-6.png" alt="image of SVG site update page project"/>
@@ -332,7 +348,7 @@
         
     <div class="row"> <!--row 3-->
         
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Interactive Video Player</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal7">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-7.png" alt="image of interactive video page project"/>
@@ -365,7 +381,7 @@
         
        <!--Project 8 information-->
         
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Accessibility<br> Refactor</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal8">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-8.png" alt="image of accessibility refactor page project"/>
@@ -399,7 +415,7 @@
       <!--Project 9 information-->
         
 
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Web App <br>Dashboard</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal9">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-9.png" alt="image of web app dashboard page project"/>
@@ -437,7 +453,7 @@
 
     <div class="row"> <!--Open row 4 -->
         
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Use a Public API to Create a Gallery</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal10">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-10.png" alt="image of API gallery project"/>
@@ -470,7 +486,7 @@
         
          <!--Project 11 information-->
 
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Optimizing a Site for Performance</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal11">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-3.png" alt="image of Optimizing a Site for Performance project"/>
@@ -504,43 +520,76 @@
         
         <!--Project 12 information-->
 
-       <div class="col-sm-4 project">
+       <div class="col-lg-4 project">
           <h1 class="title">Sound<br>Learning</h1>
             <h2 class="title"><a data-toggle="modal" href="#projectModal12">About this Project</a></h2>
            <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-2.png" alt="image of Sound Learning website logo for the Tomatis method"/>
             
-           
-       <!--Modal-->
-          <div class="modal fade" id="projectModal12">
-                  <div class="modal" tabindex="-1" role="dialog" id="projectModal1">
+              <!--Modal-->
+            <div class="modal" tabindex="-1" role="dialog" id="projectModal12">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title">Sound Learning</h5>
+                    <h5 class="modal-title">Optimizing a Site for Performance</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                     <p>This website was developed for a local business to provide them with an online presence.  It was created using HTML, CSS and JavaScript.  For this project I also researched SEO best practices and implimented these into the site, to ensure it registered when searched for.</p>
+                    <p>This website was developed for a local business to provide them with an online presence.  It was created using HTML, CSS and JavaScript.  For this project I also researched SEO best practices and implimented these into the site, to ensure it registered when searched for.</p>
+                   
                   </div>
                 </div>
               </div>
           </div>
-         </div>
+           
+            
     <!--End Modal-->
     <!--link content-->    
            <div class="link-content">
                <span class="project-btn"><a href="http://soundlearning.nz/">The Website</a></span>
                <span class="project-btn"><a href="https://github.com/TracyExcell/soundlearning-master/blob/master/index.html">The Code</a></span>
             </div>
-           <!--End link content-->
-           
-           
-    
-           
+           <!--End link content-->   
+     </div>  <!--end project -->
+      
+    </div> <!--end row -->
+        
+    <!--Project 13 information-->
+ <div class="row"> <!--Open row 5 -->
+        
+       <div class="col-lg-4 project">
+          <h1 class="title">Impact<br>Health</h1>
+            <h2 class="title"><a data-toggle="modal" href="#projectModal13">About this Project</a></h2>
+           <img class="project-imgs img-rectangle img-responsive center-block" src="portfolio-5.png" alt="image of project front folder for Imapct Health website"/>
+             <!--Modal-->
+           <div class="modal" tabindex="-1" role="dialog" id="projectModal13">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Impact Health</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                     <p>This was a website update. The original site was not responsive or functioning correctly in the browser.  The client requested a responsive website that showed when searched for.  This site was designed using the mobile first approach and SEO practices.</p>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+    <!--End Modal--> 
+          
+    <!--link content-->    
+           <div class="link-content">
+               <span class="project-btn"><a href="http://impacthealthnz.co.nz">The Website</a></span>
+            </div>
+           <!--End link content-->   
+     </div>  <!--end project -->
+   </div> <!--close row-->
+      
 
-     </div>  <!--end row 4-->
     </div> <!--close container-->
       
         
@@ -552,7 +601,7 @@
     <!-- Contact Section --> 
     <div id="contactSection">
       <h1 id="Contact">Contact Information</h1>
-        <p>If you would like to chat please contact me using the email below:</p>
+        <p>If you would like to chat, please contact me using the email below:</p>
         
         <p>excelltracy@gmail.com</p>
         <a href="https://www.linkedin.com/in/tracy-excell-580442144/"><img src="linkedin.png" alt="linked in icon to click for profile" id="linkedin"></a>
@@ -561,7 +610,7 @@
      <div class="container">    
         <footer>
             
-            <a href="#Home"><img src="arrow.png" alt="icon to click to return to the top" id="arrow"></a>
+            <a href="#Home"><img src="arrow.png" alt="icon to click to return to the top" class="arrow"></a>
         </footer>
     </div>
      
